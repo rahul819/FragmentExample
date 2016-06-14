@@ -4,6 +4,12 @@
     android:layout_height="match_parent">
 
 
+
+    <RadioGroup
+        android:id="@+id/radio_group_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -11,6 +17,8 @@
         android:id="@+id/radioButton"
      android:checked="true"
         />
+
+
 
     <RadioButton
         android:layout_width="wrap_content"
@@ -29,4 +37,7 @@
         android:layout_height="wrap_content"
         android:text="Learn Fragment"
         android:id="@+id/radioButton4" />
+
+
+    </RadioGroup>
 </LinearLayout>

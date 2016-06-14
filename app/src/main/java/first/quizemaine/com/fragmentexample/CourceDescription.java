@@ -18,6 +18,7 @@ public class CourceDescription extends Fragment {
     int defaultIndex=0;
 
 
+    String cource_content[]={"Learn Android","Learn UI Component","Learn View Group","Learn Fragment"};
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -26,9 +27,18 @@ public class CourceDescription extends Fragment {
 
         courceDescription=(TextView)view.findViewById(R.id.textView);
 
-        courceDescription.setText("Now you here learn android programming");
+          setDisplayDescription(0);
 
 
         return view;
+    }
+
+
+    public void setDisplayDescription(int courseIndex)
+    {
+
+
+        courceDescription.setText(cource_content[courseIndex]);
+
     }
 }
